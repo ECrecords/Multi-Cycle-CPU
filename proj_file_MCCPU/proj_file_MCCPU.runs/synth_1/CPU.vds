@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Dec  5 00:34:59 2021
+# Process ID: 29020
+# Current directory: C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.runs/synth_1/CPU.vds
+# Journal file: C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.runs/synth_1\vivado.jou
+# Running On: Diogenes-Turing, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 6, Host memory: 34286 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace
+Command: synth_design -top CPU -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15620
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1251.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:26]
+INFO: [Synth 8-3491] module 'PRGM_CNTR' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/PRGM_CNTR.vhd:15' bound to instance 'program_cntr' of component 'PRGM_CNTR' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'PRGM_CNTR' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/PRGM_CNTR.vhd:24]
+	Parameter DATA_BUS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PRGM_CNTR' (1#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/PRGM_CNTR.vhd:24]
+INFO: [Synth 8-3491] module 'MEMORY' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.runs/synth_1/.Xil/Vivado-29020-Diogenes-Turing/realtime/MEMORY_stub.vhdl:5' bound to instance 'mem' of component 'MEMORY' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'MEMORY' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.runs/synth_1/.Xil/Vivado-29020-Diogenes-Turing/realtime/MEMORY_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'REG_FILE' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/REG_FILE.vhd:15' bound to instance 'rf' of component 'REG_FILE' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'REG_FILE' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/REG_FILE.vhd:28]
+	Parameter DATA_BUS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'REG_FILE' (2#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/REG_FILE.vhd:28]
+INFO: [Synth 8-3491] module 'SIG_EXTEN' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/SIG_EXTEN.vhd:26' bound to instance 'imm_gen' of component 'SIG_EXTEN' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'SIG_EXTEN' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/SIG_EXTEN.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'SIG_EXTEN' (3#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/SIG_EXTEN.vhd:32]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU.vhd:15' bound to instance 'alu_comp' of component 'ALU' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:337]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU.vhd:25]
+	Parameter DATA_BUS bound to: 32 - type: integer 
+	Parameter SEL_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU.vhd:25]
+INFO: [Synth 8-3491] module 'ALU_CTRL' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU_CTRL.vhd:16' bound to instance 'ctrl_alu' of component 'ALU_CTRL' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:344]
+INFO: [Synth 8-638] synthesizing module 'ALU_CTRL' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU_CTRL.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU_CTRL.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ALU_CTRL' (5#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/ALU_CTRL.vhd:24]
+INFO: [Synth 8-3491] module 'BRANCH_LOGIC' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/BRANCH_LOGIC.vhd:24' bound to instance 'brl' of component 'BRANCH_LOGIC' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:362]
+INFO: [Synth 8-638] synthesizing module 'BRANCH_LOGIC' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/BRANCH_LOGIC.vhd:36]
+	Parameter SEL_WIDTH bound to: 3 - type: integer 
+	Parameter DATA_BUS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BRANCH_LOGIC' (6#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/BRANCH_LOGIC.vhd:36]
+INFO: [Synth 8-3491] module 'FSM_CONTROL' declared at 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/FSM_CONTROL.vhd:14' bound to instance 'ctrl_unt' of component 'FSM_CONTROL' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:378]
+INFO: [Synth 8-638] synthesizing module 'FSM_CONTROL' [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/FSM_CONTROL.vhd:38]
+	Parameter SEL_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FSM_CONTROL' (7#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/FSM_CONTROL.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (8#1) [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/sources_1/imports/multi-cycle-cpu-ECE524.srcs/sources_1/new/CPU.vhd:26]
+WARNING: [Synth 8-7129] Port OPCODE[6] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OPCODE[5] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OPCODE[1] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OPCODE[0] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[6] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[5] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[4] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[3] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[2] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[1] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[0] in module SIG_EXTEN is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1251.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1251.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1251.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1251.324 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.gen/sources_1/ip/MEMORY/MEMORY/MEMORY_in_context.xdc] for cell 'mem'
+Finished Parsing XDC File [c:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.gen/sources_1/ip/MEMORY/MEMORY/MEMORY_in_context.xdc] for cell 'mem'
+Parsing XDC File [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc:367]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc:375]
+Finished Parsing XDC File [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.srcs/constrs_1/imports/constrs/zedboard_master_XDC_RevC_D_v3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1263.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1263.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for mem. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'FSM_CONTROL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   fetch |                   00000000000001 |                             0000
+                  fetch2 |                   00000000000010 |                             0001
+                  decode |                   00000000000100 |                             0010
+               ex_op_imm |                   00000000001000 |                             0011
+                   ex_op |                   00000000010000 |                             0100
+                   wb_op |                   00000000100000 |                             1001
+                  ex_jal |                   00000001000000 |                             0101
+               ex_branch |                   00000010000000 |                             0110
+           ex_load_store |                   00000100000000 |                             0111
+               mem_store |                   00001000000000 |                             1101
+                mem_load |                   00010000000000 |                             1100
+                 wb_load |                   00100000000000 |                             1010
+               ex_system |                   01000000000000 |                             1000
+               wb_system |                   10000000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'FSM_CONTROL'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 38    
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	  10 Input   14 Bit        Muxes := 1     
+	   5 Input   14 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 33    
+	  14 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port OPCODE[6] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OPCODE[5] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OPCODE[1] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OPCODE[0] in module FSM_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[6] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[5] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[4] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[3] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[2] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[1] in module SIG_EXTEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INSTR[0] in module SIG_EXTEN is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1263.145 ; gain = 11.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1297.152 ; gain = 45.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |MEMORY        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |MEMORY_bbox |     1|
+|2     |BUFG        |     1|
+|3     |CARRY4      |    46|
+|4     |LUT1        |     1|
+|5     |LUT2        |    15|
+|6     |LUT3        |    43|
+|7     |LUT4        |   159|
+|8     |LUT5        |   158|
+|9     |LUT6        |  1077|
+|10    |MUXF7       |   128|
+|11    |MUXF8       |    64|
+|12    |FDCE        |   128|
+|13    |FDPE        |     1|
+|14    |FDRE        |  1088|
+|15    |IBUF        |    10|
+|16    |OBUF        |     8|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1310.977 ; gain = 47.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.977 ; gain = 59.652
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1319.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 238 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1324.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2425cc72
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1324.434 ; gain = 73.109
+INFO: [Common 17-1381] The checkpoint 'C:/Users/elvis/Documents/CSUN/2021-2022/Fall-2021/ECE524/MULTI_CYCLE_CPU/proj_file_MCCPU/proj_file_MCCPU.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  5 00:35:44 2021...
